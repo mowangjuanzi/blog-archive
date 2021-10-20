@@ -1,5 +1,7 @@
 # ubuntu 支持 onedrive
 
+![](../images/20211020.jpg)
+
 ## 简介
 
 关于包，使用的是 [abraunegg/onedrive](https://github.com/abraunegg/onedrive)。感谢前辈们的无私奉献。

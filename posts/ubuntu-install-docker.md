@@ -106,4 +106,22 @@ Docker Compose version v2.0.1
 sudo rm /usr/local/bin/docker-compose
 ```
 
+## Docker 添加镜像
+
+首先使用打开 `/etc/docker/daemon.json`，并添加以下内容
+
+```json
+{
+  "registry-mirrors": ["http://hub-mirror.c.163.com"]
+}
+```
+
+最后重启服务：
+
+```bash
+sudo systemctl restart docker.service
+```
+
+## 总结
+
 好了。基本上 Ubuntu 下安装 Docker 就介绍完毕了。

@@ -13,6 +13,7 @@
 ## 2021年
 
 ### 10月
+- [Ubuntu 安装 Docker](./posts/ubuntu-install-docker.md)
 - [Git 基础用法](./posts/git-basic-usage.md)
 - [ubuntu 支持 onedrive](./posts/ubuntu-install-onedrive.md)
 

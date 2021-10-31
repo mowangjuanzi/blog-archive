@@ -19,7 +19,7 @@
 
 ### 9月
 
-- [Ubuntu 安装 ElasticSearch](.posts/ubuntu-install-elasticsearch.md)
+- [Ubuntu 安装 ElasticSearch](./posts/ubuntu-install-elasticsearch.md)
 
 ### 3月
 

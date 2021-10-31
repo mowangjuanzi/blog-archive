@@ -56,6 +56,12 @@ sudo systemctl start elasticsearch
 sudo systemctl stop elasticsearch
 ```
 
+重新启动
+
+```bash
+sudo systemctl restart elasticsearch
+```
+
 ## 检测是否安装成功：
 
 首先我们要执行命令将其启动（如果已经启动了，那就不用执行下面的启动命令了）：

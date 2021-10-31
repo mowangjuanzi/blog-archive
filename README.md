@@ -17,6 +17,10 @@
 - [Git 基础用法](./posts/git-basic-usage.md)
 - [ubuntu 支持 onedrive](./posts/ubuntu-install-onedrive.md)
 
+### 9月
+
+- [Ubuntu 安装 ElasticSearch](.posts/ubuntu-install-elasticsearch.md)
+
 ### 3月
 
 - [Ubuntu 安装 PHP](./posts/ubuntu-install-php.md)

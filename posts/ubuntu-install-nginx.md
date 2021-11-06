@@ -81,3 +81,31 @@ sudo systemctl status nginx
 ```bash
 sudo systemctl disable nginx
 ```
+
+## 用户权限
+
+nginx 默认的用户和用户组是 `nginx`。这里为了和FPM做配合，需要将其修改为 `www-data` 用户
+
+首先打开 `etc/nginx/nginx.conf`：
+
+```nginx
+user  nginx;
+worker_processes  auto;
+```
+
+将其修改如下：
+
+```nginx
+user  www-data;
+worker_processes  auto;
+```
+
+然后重启 nginx。
+
+这里要注意的是修改 Nginx 日志的权限问题。
+
+执行如下命令对其进行修改用户群权限。
+
+```bash
+sudo chown www-data:www-data /var/log/nginx/*
+```

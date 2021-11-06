@@ -12,15 +12,19 @@
 
 ## 2021年
 
+### 11月
+
+- [ubuntu 安装 Nginx](/posts/ubuntu-install-nginx.md)
+
 ### 10月
-- [Ubuntu 安装 Docker](./posts/ubuntu-install-docker.md)
-- [Git 基础用法](./posts/git-basic-usage.md)
-- [ubuntu 支持 onedrive](./posts/ubuntu-install-onedrive.md)
+- [Ubuntu 安装 Docker](/posts/ubuntu-install-docker.md)
+- [Git 基础用法](/posts/git-basic-usage.md)
+- [ubuntu 支持 onedrive](/posts/ubuntu-install-onedrive.md)
 
 ### 9月
 
-- [Ubuntu 安装 ElasticSearch](./posts/ubuntu-install-elasticsearch.md)
+- [Ubuntu 安装 ElasticSearch](/posts/ubuntu-install-elasticsearch.md)
 
 ### 3月
 
-- [Ubuntu 安装 PHP](./posts/ubuntu-install-php.md)
+- [Ubuntu 安装 PHP](/posts/ubuntu-install-php.md)

@@ -27,22 +27,21 @@ Press [ENTER] to continue or Ctrl-c to cancel adding it.
 ```
 $ sudo apt show php
 Package: php
-Version: 2:8.0+82+ubuntu20.04.1+deb.sury.org+1
+Version: 2:8.0+85+ubuntu21.10.1+deb.sury.org+1
 Priority: optional
 Section: php
-Source: php-defaults (82+ubuntu20.04.1+deb.sury.org+1)
+Source: php-defaults (85+ubuntu21.10.1+deb.sury.org+1)
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 13.3 kB
 Depends: php8.0
-Download-Size: 6,960 B
-APT-Sources: http://ppa.launchpad.net/ondrej/php/ubuntu focal/main amd64 Packages
+Download-Size: 6,926 B
+APT-Sources: http://ppa.launchpad.net/ondrej/php/ubuntu impish/main amd64 Packages
 Description: server-side, HTML-embedded scripting language (default)
- PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
- open source general-purpose scripting language that is especially suited
- for web development and can be embedded into HTML.
+ PHP (递归缩写：Hypertext Preprocessor，超文本预处理器)，是一种广泛应用的 开源通用脚本语言，特别适用于网络开发并可嵌入
+ HTML 中。
  .
- This package is a dependency package, which depends on latest stable
- PHP version (currently 8.0).
+ This package is a dependency package, which depends on latest stable PHP
+ version (currently 8.0).
 
 N: 有 1 条附加记录。请加上 ‘-a’ 参数来查看它们
 ```
@@ -51,28 +50,22 @@ N: 有 1 条附加记录。请加上 ‘-a’ 参数来查看它们
 
 ## 安装PHP
 
-执行以下命令安装8.0的PHP：
+但是我们可以安装最新的8.1。因为跟默认版本不相符，所以每次都要指定版本。
+
+执行以下命令安装8.1的PHP：
 
 ```
-sudo apt install php-fpm
+sudo apt install php8.1-fpm
 ```
-
-也按照以下方法安装其他版本的PHP：
-
-```
-sudo apt install php7.4-fpm
-```
-
-我目前查询了一下，该PPA目前支持 `5.6.* ~ 8.0.*` 系列。
 
 安装成功后可以执行命令查看下目前的版本：
 
 ```
 $ php -v
-PHP 8.0.3 (cli) (built: Mar  5 2021 07:54:13) ( NTS )
+PHP 8.1.0RC5 (cli) (built: Nov  4 2021 14:58:40) (NTS)
 Copyright (c) The PHP Group
-Zend Engine v4.0.3, Copyright (c) Zend Technologies
-    with Zend OPcache v8.0.3, Copyright (c), by Zend Technologies
+Zend Engine v4.1.0-dev, Copyright (c) Zend Technologies
+    with Zend OPcache v8.1.0RC5, Copyright (c), by Zend Technologies
 ```
 
 ## 可执行命令
@@ -93,7 +86,7 @@ Zend Engine v4.0.3, Copyright (c) Zend Technologies
 
 ```
 $ ls /var/log/php*
-/var/log/php7.4-fpm.log        /var/log/php8.0-fpm.log
+/var/log/php8.1-fpm.log
 ```
 
 ## 管理命令
@@ -101,37 +94,37 @@ $ ls /var/log/php*
 启动：
 
 ```
-sudo systemctl start php8.0-fpm
+sudo systemctl start php8.1-fpm
 ```
 
 停止：
 
 ```
-sudo systemctl stop php8.0-fpm
+sudo systemctl stop php8.1-fpm
 ```
 
 重新启动：
 
 ```
-sudo systemctl restart php8.0-fpm
+sudo systemctl restart php8.1-fpm
 ```
 
-设置开机启动：
+设置开机启动（默认已经设置）：
 
 ```
-sudo systemctl enable php8.0-fpm
+sudo systemctl enable php8.1-fpm
 ```
 
 取消开机启动
 
 ```
-sudo systemctl disable php8.0-fpm
+sudo systemctl disable php8.1-fpm
 ```
 
 查看运行状态
 
 ```
-sudo systemctl status php8.0-fpm
+sudo systemctl status php8.1-fpm
 ```
 
 ## apt 安装扩展
@@ -139,7 +132,7 @@ sudo systemctl status php8.0-fpm
 安装扩展可以执行以下命令：
 
 ```
-sudo apt install php-mbstring php-dom php-mysql
+sudo apt install php8.1-mbstring php8.1-dom php8.1-mysql
 ```
 
 通过这种方式可以安装一些扩展。
@@ -147,7 +140,7 @@ sudo apt install php-mbstring php-dom php-mysql
 我们可以通过执行以下命令来查看可以安装那些扩展：
 
 ```
-sudo apt search php-*
+sudo apt search php8.1-*
 ```
 
 ## 手动安装扩展
@@ -155,10 +148,8 @@ sudo apt search php-*
 首先我们先安装PHP的编译依赖包
 
 ```
-sudo apt install php-dev
+sudo apt install php8.1-dev
 ```
-
-> 这里还是要提醒下，如果要安装的不是默认版本的编译依赖包，需要执行版本。比如 `php7.4-dev`。
 
 比如说安装一个 apt 不存在的包，可以执行如下命令：
 
@@ -175,7 +166,7 @@ sudo pecl install seaslog
 首先看下它的目录
 
 ```
-$ ls /etc/php/8.0/
+$ ls /etc/php/8.1/
 cli  fpm  mods-available
 ```
 
@@ -186,8 +177,39 @@ cli  fpm  mods-available
 我们查看下面的命令就了解了：
 
 ```
-$ ll /etc/php/8.0/fpm/conf.d/20-mbstring.ini 
-lrwxrwxrwx 1 root root 40  7月 16 22:34 /etc/php/8.0/fpm/conf.d/20-mbstring.ini -> /etc/php/8.0/mods-available/mbstring.ini
+$ ll /etc/php/8.1/fpm/conf.d/10-opcache.ini 
+lrwxrwxrwx 1 root root 39 11月  6 19:57 /etc/php/8.1/fpm/conf.d/10-opcache.ini -> /etc/php/8.1/mods-available/opcache.ini
 ```
 
 好了。基本上介绍就是这样了。
+
+## 与 Nginx 配合
+
+首先是需要安装 Nginx。这里可以参考我的[Ubuntu 安装 Nginx](/posts/ubuntu-install-nginx.md)。
+
+首先我们先写入一个可以输出 `phpinfo()` 的文件。
+
+```bash
+echo -e "<?php\nphpinfo();" | sudo tee /usr/share/nginx/html/index.php
+```
+
+这里我们修改 `/etc/nginx/conf.d/default.conf` 为如下的内容：
+
+```nginx
+server {
+    listen       80;
+    server_name  localhost;
+
+    root   /usr/share/nginx/html;
+    index  index.php index.html;
+
+    location ~ \.php$ {
+        fastcgi_pass   unix:/run/php/php8.1-fpm.sock;
+        fastcgi_index  index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include        fastcgi_params;
+    }
+}
+```
+
+最后重启下 `Nginx`，然后就可以访问 http://localhost 就可以看到 phpinfo 的相关信息了。

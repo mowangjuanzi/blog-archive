@@ -183,6 +183,33 @@ lrwxrwxrwx 1 root root 39 11月  6 19:57 /etc/php/8.1/fpm/conf.d/10-opcache.ini 
 
 好了。基本上介绍就是这样了。
 
+## 安装 Composer
+
+首先执行如下命令获取安装脚本：
+
+```bash
+curl -L "https://getcomposer.org/installer" -o composer-setup.php
+```
+
+执行安装命令：
+
+```bash
+sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+```
+
+最后对其赋予执行权限：
+
+```bash
+sudo chmod +x /usr/local/composer
+```
+
+这样 Composer 就安装完成了。下面看下安装的版本：
+
+```bash
+$ composer -V
+Composer version 2.1.11 2021-11-02 12:10:25
+```
+
 ## 与 Nginx 配合
 
 首先是需要安装 Nginx。这里可以参考我的[Ubuntu 安装 Nginx](/posts/ubuntu-install-nginx.md)。

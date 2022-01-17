@@ -122,6 +122,19 @@ git diff commit_id commit_id FILENAME
 git --version
 ```
 
+- 删除远程仓库已经删除过的分支
+
+```bash
+git remote prune origin
+```
+
+## 设置全局 `.gitignore`
+
+```bash
+echo -e "/.idea/\n/.vscode/" > ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
+```
+
 ## 以前 Windows 碰到的问题记录
 
 - 有的电脑 win10 命令行或者 `git bash` 命令行 会出现空格现象。 

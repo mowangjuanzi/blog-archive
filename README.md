@@ -10,6 +10,16 @@
 - [Docker 环境搭建](git@gitee.com:watermelon-team/docker.git)
 - [数据库结构生成 Markdown](https://gitee.com/watermelon-team/data-dict)
 
+目前正在参与的项目：
+
+- [php/doc-zh](https://github.com/php/doc-zh)
+
+## 2022年
+
+### 01月
+
+- [Sentry 磁盘清理](/posts/sentry-cleanup-data.md)
+
 ## 2021年
 
 ### 11月
@@ -21,10 +31,10 @@
 - [Git 基础用法](/posts/git-basic-usage.md)
 - [ubuntu 支持 onedrive](/posts/ubuntu-install-onedrive.md)
 
-### 9月
+### 09月
 
 - [Ubuntu 安装 ElasticSearch](/posts/ubuntu-install-elasticsearch.md)
 
-### 3月
+### 03月
 
 - [Ubuntu 安装 PHP](/posts/ubuntu-install-php.md)

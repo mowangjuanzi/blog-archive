@@ -16,6 +16,10 @@
 
 ## 2022年
 
+### 02月
+
+- [MySQL 重置密码](/posts/mysql-reset-password.md)
+
 ### 01月
 
 - [Sentry 磁盘清理](/posts/sentry-cleanup-data.md)

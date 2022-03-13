@@ -13,9 +13,8 @@ sudo apt install git
 如果对版本有要求，需要使用最新版本的Git。可以通过以下命令安装：
 
 ```bash
-add-apt-repository ppa:git-core/ppa 
-apt update
-apt install git
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt install git
 ```
 
 ## 配置秘钥

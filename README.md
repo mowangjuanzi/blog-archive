@@ -16,6 +16,10 @@
 
 ## 2022年
 
+### 03月
+
+- [Ubuntu 安装后](/posts/ubuntu-post-installation.md)
+
 ### 02月
 
 - [MySQL 重置密码](/posts/mysql-reset-password.md)

@@ -44,3 +44,17 @@ sudo apt install microsoft-edge-stable
 ```bash
 sudo snap find simplenote
 ```
+
+## 邮件客户端
+
+```bash
+sudo apt install thunderbird thunderbird-locale-zh-hans
+```
+
+## QQ 音乐
+
+下载地址: https://y.qq.com/download/download.html
+
+双击安装。
+
+

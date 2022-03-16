@@ -2,7 +2,7 @@
 
 ![](../images/20210916.jpg)
 
-> 2022-03-15 已更新为 v8 版本。
+> 2022-03-15 已更新为 v8.1 版本。
 
 ## 前置条件
 
@@ -159,3 +159,7 @@ Debian 包也有一个系统配置文件（`/etc/default/elasticsearch`），它
 | **logs** | 日志文件位置。 | `/var/log/elasticsearch` | `path.logs` |
 | **plugins** | 插件文件位置。每个插件将包含在一个子目录中. | `/usr/share/elasticsearch/plugins` |  |
 | **repo** | 共享文件系统存储库位置。可以容纳多个位置。文件系统存储库可以放置在指定目录中任何子目录中。 | 不能配置 | `path.repo` |
+
+## 链接
+
+- [Ubuntu 安装 Kibana](./ubuntu-install-kibana.md)

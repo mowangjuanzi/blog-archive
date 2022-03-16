@@ -42,6 +42,7 @@
 ### 09月
 
 - [Ubuntu 安装 ElasticSearch](/posts/ubuntu-install-elasticsearch.md)
+- [Ubuntu 安装 Kibana](/posts/ubuntu-install-kibana.md)
 
 ### 03月
 

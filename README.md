@@ -14,6 +14,10 @@
 
 - [php/doc-zh](https://github.com/php/doc-zh)
 
+## PHP Annotated
+
+- [2022 年 1 月](./posts/php-annotated-january-2022.md)
+
 ## 2022年
 
 ### 03月

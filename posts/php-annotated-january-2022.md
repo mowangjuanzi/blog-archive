@@ -1,6 +1,8 @@
-# PHP Annotated - 2022年1月
+# 【译】PHP Annotated - 2022年1月
 
 ![](../images/20220127.jpg)
+
+> 原文链接：https://blog.jetbrains.com/phpstorm/2022/01/php-annotated-january-2022/
 
 大家好：
 
@@ -57,69 +59,73 @@
 - [beyondcode/httpdump](https://github.com/beyondcode/httpdump) —— Laravel 应用程序用于调试传入的 HTTP 请求（调试 WEB hook，等等）。随机创建 URL 并以友好的方式将所有请求转储给它们。可以在 httpdump.app 中看到它的运行情况。
 - [spatie/ignition](https://github.com/spatie/ignition) 用于显示调试错误页面的库，在 Laravel 中为许多人所熟知，但现在独立于框架，已经更新且可以在任何应用程序中使用。查看[博客文章概述](https://freek.dev/2169-a-better-error-page-for-symfony-applications)。
 - [chevere/xr](https://github.com/chevere/xr) —— ReactPHP 的调试服务器，灵感来自 [spatie/ray](https://github.com/spatie/ray)，但它并不是桌面应用程序，它仅仅是一个 CLI 命令，[视频 Demo](https://vimeo.com/662391948)。
-- [JustSteveKing/php-sdk](https://github.com/JustSteveKing/php-sdk)，[Sammyjo20/Saloon](https://github.com/Sammyjo20/Saloon) —— 两个相似且具有相同想法的库：simplify SDK creation for services or organize access to different APIs in the common style.
+- [JustSteveKing/php-sdk](https://github.com/JustSteveKing/php-sdk)，[Sammyjo20/Saloon](https://github.com/Sammyjo20/Saloon) —— 两个相似且具有相同想法的库：简化服务 SKD 创建或者以通用风格实现对不同 API 的访问。
 - [AliSaleem27/wordle-cl](https://github.com/AliSaleem27/wordle-cli) —— CLI 版本的流行五字母猜词游戏 Wordle。
 - [staabm/phpstan-dba](https://github.com/staabm/phpstan-dba) —— [PHPStan](https://github.com/phpstan/phpstan) 扩展，用于检查 `PDO`、`MySQLi`、`Doctrine/DBAL` 中 SQL 查询的有效性。[Demo](https://github.com/staabm/phpstan-dba/pull/61/files#diff-98a3c43049f6a0c859c0303037d9773534396533d7890bad187d465d390d634e)。
-- [flow-php/etl](https://github.com/flow-php/etl) —— An implementation of the Extract Transform Load pattern to use in your PHP application. Check out the [thread](https://twitter.com/norbert_tech/status/1484863793280786439) from the author to learn more.
+- [flow-php/etl](https://github.com/flow-php/etl) —— 在应用程序中使用提取转换加载模式的实现。查看作者的 [thread](https://twitter.com/norbert_tech/status/1484863793280786439) 以了解更多信息。
 
 ## Symfony
 
-- **The [symfony-cli](https://github.com/symfony-cli/symfony-cli) tool has been open-sourced**
+- **[symfony-cli](https://github.com/symfony-cli/symfony-cli) 工具已开源**
 
-    In addition to Symfony-specific tasks, the tool includes a local server, which can be used as a modern alternative to MAMP/WAMP. It supports multiple versions of PHP (each project can specify its own), has integration with Docker, local domains, and automatic HTTPS. 
+    除了 Symfony 特定任务外，此工具还有一个本地服务器，可以用作 MAMP/WAMP 的现代替代品。支持多个版本的 PHP（每个项目可以指定不同版本的 PHP），与 Docker、本地域和自动 HTTPS 集成。
 
-    The tool is implemented in Go, and is available for Linux, macOS, and Windows.
+    此工具使用 Go 实现，可用于 Linux、macOS、Windows。
 
-- [A better way to quickly start Symfony projects](https://symfony.com/blog/a-better-way-to-quickly-start-symfony-projects)
-- [Introducing the Symfony 6 Certification](https://symfony.com/blog/introducing-the-symfony-6-certification) – 90 minutes for 75 questions from 15 topics.
-- [Organizing your Symfony project tests](https://www.strangebuzz.com/en/blog/organizing-your-symfony-project-tests)
-- [The key concepts of Symfony’s Security package in 5 minutes](https://alex-daubois.medium.com/symfonys-security-key-concepts-in-5-minutes-e18033c26b35)
+- [快速启动 Symfony 项目的更好办法](https://symfony.com/blog/a-better-way-to-quickly-start-symfony-projects)
+- [Symfony 6 认证简介](https://symfony.com/blog/introducing-the-symfony-6-certification) —— 90 分钟内完成关于 15 个主题的 75 个问题。
+- [组织 Symfony 项目测试](https://www.strangebuzz.com/en/blog/organizing-your-symfony-project-tests)
+- [五分钟了解 Symfony Security 包的关键概念](https://alex-daubois.medium.com/symfonys-security-key-concepts-in-5-minutes-e18033c26b35)
 - [Symfony Messenger <3 systemd](https://jolicode.com/blog/symfony-messenger-systemd)
-- [Use PHP Enums as Doctrine type in Symfony](https://smaine-milianni.medium.com/use-php-enums-as-doctrine-type-in-symfony-85909aa0a19a)
-- [Build Symfony and Doctrine ORM Applications with ease using Ecotone](https://blog.ecotone.tech/build-symfony-application-with-ease-using-ecotone/)
-- [norberttech/static-content-generator-bundle](https://github.com/norberttech/static-content-generator-bundle) – The tool generates static HTML pages from your Symfony application.
-- [Using custom PHP attributes for registering and configuring Symfony Messenger handlers](https://angelovdejan.me/2022/01/09/custom-php-attributes-for-symfony-messenger-handlers.html)
-- [JSON Columns and Doctrine DBAL 3 Upgrade](https://dunglas.fr/2022/01/json-columns-and-doctrine-dbal-3-upgrade/)
+- [在 Symfony 中使用 PHP 枚举作为 Doctrine](https://smaine-milianni.medium.com/use-php-enums-as-doctrine-type-in-symfony-85909aa0a19a)
+- [使用 Ecotone 轻松构建 Symfony 和 Doctrine ORM 应用程序](https://blog.ecotone.tech/build-symfony-application-with-ease-using-ecotone/)
+- [norberttech/static-content-generator-bundle](https://github.com/norberttech/static-content-generator-bundle) —— 此工具从你 Symfony 应用程序中生成静态 HTML 页面。
+- [试用自定义 PHP 属性注册并且配置 Symfony Messenger 处理程序](https://angelovdejan.me/2022/01/09/custom-php-attributes-for-symfony-messenger-handlers.html)
+- [JSON 列和 Doctrine DBAL 3 升级](https://dunglas.fr/2022/01/json-columns-and-doctrine-dbal-3-upgrade/)
 
 ## Laravel
 
-- [**Laracon Online** is on Feb 9, and it’s free](https://laracon.net/)
+- [**Laracon Online** 在 2 月 9 日上线，免费](https://laracon.net/)
 
-    The conference is usually paid, but this Laracon Online Winter will be broadcast free on [YouTube](https://www.youtube.com/watch?v=5ubDLFKKk54).
+    会议通常是付费的，但是这个 Laracon Online Winter 将会在 [YouTube](https://www.youtube.com/watch?v=5ubDLFKKk54) 上免费播放。
 
-- [Building a multi-room chat application with Laravel and Centrifugo](https://centrifugal.dev/blog/2021/12/14/laravel-multi-room-chat-tutorial)
-- [Managing Laravel services](https://downing.tech/posts/managing-laravel-services)
-- [Laravel Pseudo-Daemons](https://aaronfrancis.com/2020/laravel-pseudo-daemons)
-- [Primitive Types in Controllers and Closure Routes](https://laravel-news.com/primitive-types-in-controllers-and-closure-routes)
-- [How to scale Laravel project on AWS without breaking the bank](https://treblle.com/blog/how-does-treblle-scale-on-aws-without-breaking-the-bank).
-- [LaravelDaily/Laravel-Roadmap-Learning-Path](https://github.com/LaravelDaily/Laravel-Roadmap-Learning-Path) – A systematic collection of materials for learning Laravel from simple to complex.
-- [Building an API using TDD in Laravel](https://laravel.io/articles/building-and-api-using-tdd-in-laravel)
-- [Efficient Pagination Using Deferred Joins](https://aaronfrancis.com/2022/efficient-pagination-using-deferred-joins)
-- [45 New Laravel Tips 2022](https://www.youtube.com/watch?v=YzBGmdnGtbY)
+- [使用 Laravel 和 Centrifugo 构建多房间聊天应用程序](https://centrifugal.dev/blog/2021/12/14/laravel-multi-room-chat-tutorial)
+- [管理 Laravel 服务](https://downing.tech/posts/managing-laravel-services)
+- [Laravel 伪守护进程](https://aaronfrancis.com/2020/laravel-pseudo-daemons)
+- [控制器和必报路由中的原始类型](https://laravel-news.com/primitive-types-in-controllers-and-closure-routes)
+- [如何在 AWS 中扩展 Laravel 项目而不耗费大量资金](https://treblle.com/blog/how-does-treblle-scale-on-aws-without-breaking-the-bank).
+- [LaravelDaily/Laravel-Roadmap-Learning-Path](https://github.com/LaravelDaily/Laravel-Roadmap-Learning-Path) —— 循序渐进的学习 Laravel 的系统资料集。
+- [在 Laravel 中使用 TDD 构建 API](https://laravel.io/articles/building-and-api-using-tdd-in-laravel)
+- [使用延迟关联的高效分页](https://aaronfrancis.com/2022/efficient-pagination-using-deferred-joins)
+- [2022 年 45 个新的 Laravel 技巧](https://www.youtube.com/watch?v=YzBGmdnGtbY)
 
 ## Yii
 
-- [Yii 1.1.25](https://www.yiiframework.com/news/419/yii-1-1-25-is-released) – The first version of the Yii framework is not actively developed, but compatibility fixes are still coming out. This update fixes a few for PHP 8.0.
-- The first stable releases for some Yii 3 components have also been released: [yiisoft/user](https://github.com/yiisoft/user), [yiisoft/translator-extractor](https://github.com/yiisoft/translator-extractor), [yiisoft/config](https://github.com/yiisoft/config), [yiisoft/yii-swagger](https://github.com/yiisoft/yii-swagger), [yiisoft/widget](https://github.com/yiisoft/widget), [yiisoft/router](https://github.com/yiisoft/router).
-- [Yii news 2021, issue 4](https://opencollective.com/yiisoft/updates/yii-news-2021-issue-4)
+- [Yii 1.1.25](https://www.yiiframework.com/news/419/yii-1-1-25-is-released) —— Yii 框架的第一个版本没有积极开发，但扔在发布兼容性修复程序。此更新修复了 PHP 8.0 的一些问题。
+- 一些 Yii 3 组件的第一个稳定版本也已经发布：[yiisoft/user](https://github.com/yiisoft/user)、[yiisoft/translator-extractor](https://github.com/yiisoft/translator-extractor)、[yiisoft/config](https://github.com/yiisoft/config)、[yiisoft/yii-swagger](https://github.com/yiisoft/yii-swagger)、[yiisoft/widget](https://github.com/yiisoft/widget)、[yiisoft/router](https://github.com/yiisoft/router)。
+- [Yii 新闻 2021 第 4 期](https://opencollective.com/yiisoft/updates/yii-news-2021-issue-4)
 
 ## 杂项
 
-- [7年后尝试 PHP](https://www.kode-krunch.com/2021/12/trying-out-php-after-7-years.html) of working with Java.
-- [2022 年的 PHP ](https://stitcher.io/blog/php-in-2022) – Brent Roose’s traditional ecosystem overview.
+- JAVA 工作 [7 年后尝试 PHP](https://www.kode-krunch.com/2021/12/trying-out-php-after-7-years.html)。
+- [2022 年的 PHP ](https://stitcher.io/blog/php-in-2022) – Brent Roose 的传统生态概述。
 - [PHP 解释 Heap](https://doeken.org/blog/heaps-explained-in-php)
 - [PHP 责任链设计模式实现](https://orangesoft.co/blog/chain-of-responsibility-design-pattern-in-php)
-- [async & await at the edge with ReactPHP](https://blog.wyrihaximus.net/2021/12/async-and-await-at-the-edge-with-reactphp/) – PHP 8.1 with fibers support is out! One of the ReactPHP maintainers writes about how they’re used. In particular, the new `React\Async\async` and `React\Async\await` functions have been added.
-- [PHP 基准测试：include() 与 file_get_contents()](https://konstantin.blog/2021/php-benchmark-include-vs-file_get_contents/) – `include()` can be faster than `file_get_contents()` if you tweak the Opcache settings.
+- [async & await at the edge with ReactPHP](https://blog.wyrihaximus.net/2021/12/async-and-await-at-the-edge-with-reactphp/) —— 支持 fiber 的 PHP 8.1 已经发布！一位 React 维护者写了一篇如何使用的文章。特别是新添加了 `React\Async\async` 和 `React\Async\await` 函数。
+- [PHP 基准测试：include() 与 file_get_contents()](https://konstantin.blog/2021/php-benchmark-include-vs-file_get_contents/) —— 如果调整 Opcache 设置，`include()` 可能比 `file_get_contents()` 更快。
 - [Where does my validation live?](https://blog.frankdejonge.nl/where-does-validation-live/)
-- [How to build maintainable PHP applications](https://blog.ecotone.tech/how-to-build-maintainable-php-applications/) and decouple business logic from the frameworks.
-- [理解 PHP 的 8 个日志级别](https://darkghosthunter.medium.com/php-making-sense-of-the-8-log-levels-ddd27c4719a) – You’ll most likely only need four.
-- [覆盖 vendor 类](https://downing.tech/posts/overriding-vendor-classes) – If you don’t want to create a fork, you could properly configure autoloading in composer.json. Or as an option, you can also use patches with [cweagans/composer-patches](https://github.com/cweagans/composer-patches).
+- [如何构建可维护的 PHP 应用程序](https://blog.ecotone.tech/how-to-build-maintainable-php-applications/)且将业务逻辑与框架分离。
+- [理解 PHP 的 8 种日志级别](https://darkghosthunter.medium.com/php-making-sense-of-the-8-log-levels-ddd27c4719a) —— 很可能你只需要四种。
+- [覆盖 vendor 类](https://downing.tech/posts/overriding-vendor-classes) —— 如果不想创建分叉，可以在 composer.json 中配置正确的加载。或者作为一个选项，也可以使用带有 [cweagans/composer-patches](https://github.com/cweagans/composer-patches) 的补丁。
 - [在 PHP 中访问私有属性](https://www.lambda-out-loud.com/posts/accessing-private-properties-php/) – Instead of reflection and access through `Closure::bind` you can cast object to array (but should you?).
-- Sometimes it can be useful to look at the generated opcodes to understand what is going on in the code. The command `phpdbg -p* file.php will help.
+- 有时查看生成的操作码以了解代码中发生的情况非常有用。`phpdbg -p* file.php` 命令将有所帮助。
 
-    <iframe src="https://twitter.com/AllaertPatrick/status/1478323931924860928?s=20">
+    > 为了更好的理解 #PHP 代码片段在内部如何工作，可以使用 `phpdbg -p* file.php` 转储操作码。
+    > 
+    > 揭穿为啥单引号比双引号更快的原因。
+    > ![](../images/FIQONPpXIAMc8yd.jpeg)
+    > 原始链接：https://twitter.com/AllaertPatrick/status/1478323931924860928
 
 ## 社区
 
-- <iframe width="560" height="315" src="https://www.youtube.com/embed/IfcFQxYPTxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+- https://www.youtube.com/embed/IfcFQxYPTxo

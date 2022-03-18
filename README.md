@@ -7,47 +7,40 @@
 我的开源项目有：
 
 - [PHP 配置翻译](https://gitee.com/watermelon-team/php-ini)
-- [Docker 环境搭建](git@gitee.com:watermelon-team/docker.git)
+- [Docker 环境搭建](https://gitee.com/watermelon-team/docker)
 - [数据库结构生成 Markdown](https://gitee.com/watermelon-team/data-dict)
 
 目前正在参与的项目：
 
 - [php/doc-zh](https://github.com/php/doc-zh)
 
-## PHP Annotated
+## 【译】PHP Annotated
 
 - [2022 年 1 月](./posts/php-annotated-january-2022.md)
 
-## 2022年
+## 原创
 
-### 03月
+### 操作系统
 
-- [Ubuntu 安装后](/posts/ubuntu-post-installation.md)
+- [Ubuntu 安装后 2022-03-13](/posts/ubuntu-post-installation.md)
+- [ubuntu 安装 Nginx 2021-11-06](/posts/ubuntu-install-nginx.md)
+- [Ubuntu 安装 Docker 2021-10-30](/posts/ubuntu-install-docker.md)
+- [ubuntu 支持 onedrive 2021-10-20](/posts/ubuntu-install-onedrive.md)
 
-### 02月
+### 编程语言
 
-- [MySQL 重置密码](/posts/mysql-reset-password.md)
+- [Ubuntu 安装 PHP 2021-03-28](/posts/ubuntu-install-php.md)
 
-### 01月
+### 数据库
 
-- [Sentry 磁盘清理](/posts/sentry-cleanup-data.md)
+- [MySQL 重置密码 2022-02-15](/posts/mysql-reset-password.md)
 
-## 2021年
+### ELK
 
-### 11月
+- [Ubuntu 安装 ElasticSearch 2021-09-16](/posts/ubuntu-install-elasticsearch.md)
+- [Ubuntu 安装 Kibana 2021-09-17](/posts/ubuntu-install-kibana.md)
 
-- [ubuntu 安装 Nginx](/posts/ubuntu-install-nginx.md)
+### 杂项
 
-### 10月
-- [Ubuntu 安装 Docker](/posts/ubuntu-install-docker.md)
-- [Git 基础用法](/posts/git-basic-usage.md)
-- [ubuntu 支持 onedrive](/posts/ubuntu-install-onedrive.md)
-
-### 09月
-
-- [Ubuntu 安装 ElasticSearch](/posts/ubuntu-install-elasticsearch.md)
-- [Ubuntu 安装 Kibana](/posts/ubuntu-install-kibana.md)
-
-### 03月
-
-- [Ubuntu 安装 PHP](/posts/ubuntu-install-php.md)
+- [Sentry 磁盘清理 2022-01-20](/posts/sentry-cleanup-data.md)
+- [Git 基础用法 2021-10-21](/posts/git-basic-usage.md)

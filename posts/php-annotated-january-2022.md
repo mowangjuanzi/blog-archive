@@ -87,7 +87,7 @@
 
 - [**Laracon Online** 在 2 月 9 日上线，免费](https://laracon.net/)
 
-    会议通常是付费的，但是这个 Laracon Online Winter 将会在 [YouTube](https://www.youtube.com/watch?v=5ubDLFKKk54) 上免费播放。
+    会议通常是付费的，但是 Laracon Online Winter 将会在 [YouTube](https://www.youtube.com/watch?v=5ubDLFKKk54) 上免费播放。
 
 - [使用 Laravel 和 Centrifugo 构建多房间聊天应用程序](https://centrifugal.dev/blog/2021/12/14/laravel-multi-room-chat-tutorial)
 - [管理 Laravel 服务](https://downing.tech/posts/managing-laravel-services)

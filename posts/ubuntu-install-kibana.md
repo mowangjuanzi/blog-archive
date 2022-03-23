@@ -13,7 +13,7 @@
 
 ## Elastic PGP 公钥和源
 
-在安装之前我们需要下载和安装公钥，否则没有办法使用apt安装 Elasticsearch。
+在安装之前我们需要下载和安装公钥，否则没有办法使用 apt 安装 Kibana。
 
 ```bash
 wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg

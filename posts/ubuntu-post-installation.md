@@ -2,6 +2,10 @@
 
 ![](../images/20220313.jpg)
 
+## 执行 `sudo` 命令忽略密码
+
+// TODO
+
 ## 安装 VSCode
 
 > 参考：https://code.visualstudio.com/docs/setup/linux
@@ -57,4 +61,8 @@ sudo apt install thunderbird thunderbird-locale-zh-hans
 
 双击安装。
 
+## 网盘/下载 —— 百度网盘
 
+下载：https://pan.baidu.com/download
+
+双击安装。

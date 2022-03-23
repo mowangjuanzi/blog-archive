@@ -1,4 +1,4 @@
-# ubuntu 支持 onedrive
+# ubuntu 支持 OneDrive
 
 ![](../images/20211020.jpg)
 
@@ -10,7 +10,16 @@
 
 ## 安装
 
-直接执行如下命令即可：
+我安装的操作系统版本是 v21.10。所以如果跟我一样可以直接按照下面的步骤操作，如果不同，请参考 [ubuntu-package-install.md](https://github.com/abraunegg/onedrive/blob/master/docs/ubuntu-package-install.md) 进行操作。
+
+首先添加源：
+
+```bash
+echo 'deb https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.10/ ./' | sudo tee /etc/apt/sources.list.d/onedrive.list
+wget -qO - https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_21.10/Release.key | sudo apt-key add -
+```
+
+安装：
 
 ```
 sudo apt update
@@ -53,7 +62,7 @@ Application has been successfully authorised, however no additional command swit
 Please use --help for further assistance in regards to running this application.
 ```
 
-这样 Onedrive 的访问 token 就设置完成了。
+这样 OneDrive 的访问 token 就设置完成了。
 
 ## 配置
 
@@ -88,28 +97,17 @@ Business Shared Folders configured     = false
 
 如果对某些参数不合适，需要进行修改。那么可以在该配置文件 `~/.config/onedrive/config`中进行修改。
 
-## 使用
-
-我们进行同步文件的话就是使用如下命令即可：
-
-```
-onedrive --synchronize
-```
-
-仅执行下载，不执行上传命令：
-
-```
-onedrive --synchronize --download-only 
-```
-
-具体可以参考该网址：
-
-[https://github.com/abraunegg/onedrive/blob/master/docs/USAGE.md#performing-a-sync](https://github.com/abraunegg/onedrive/blob/master/docs/USAGE.md#performing-a-sync)
-
 ## 服务
 
-```
+设置开机启动：
+
+```bash
 systemctl --user enable onedrive
+```
+
+启动服务：
+
+```bash
 systemctl --user start onedrive
 ```
 
@@ -117,7 +115,7 @@ systemctl --user start onedrive
 
 ## 下载配置文件
 
-我安装的 Onedrive 默认不带配置文件的。可以通过以下方式下载配置文件。
+我安装的 OneDrive 默认不带配置文件的。可以通过以下方式下载配置文件。
 
 ```bash
 wget https://raw.githubusercontent.com/abraunegg/onedrive/master/config -O ~/.config/onedrive/config
@@ -141,7 +139,7 @@ ERROR: OneDrive returned a 'HTTP 401 Unauthorized' - Cannot Initialize Sync Engi
 
 ## Windows 跟 Linux 使用同一个目录
 
-这里Windows 的默认配置可能会导致 Linux 无法使用文件，因为Windows 默认是按需下载，需要修改Windows的配置，让其完全下载，否则在Linux当前未下载的文件则无法使用。
+这里 Windows 的默认配置可能会导致 Linux 无法使用文件，因为 Windows 默认是按需下载，需要修改 Windows 的配置，让其完全下载，否则在 Linux 当前未下载的文件则无法使用。
 
 ## 总结
 

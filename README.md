@@ -25,7 +25,7 @@
 - [Ubuntu 安装后 2022-03-13](/posts/ubuntu-post-installation.md)
 - [ubuntu 安装 Nginx 2021-11-06](/posts/ubuntu-install-nginx.md)
 - [Ubuntu 安装 Docker 2021-10-30](/posts/ubuntu-install-docker.md)
-- [ubuntu 支持 onedrive 2021-10-20](/posts/ubuntu-install-onedrive.md)
+- [ubuntu 支持 OneDrive 2021-10-20](/posts/ubuntu-install-onedrive.md)
 
 ### 编程语言
 
@@ -44,3 +44,7 @@
 
 - [Sentry 磁盘清理 2022-01-20](/posts/sentry-cleanup-data.md)
 - [Git 基础用法 2021-10-21](/posts/git-basic-usage.md)
+
+## Cook
+
+- [辣椒炒鸡](./cook/shan-dong-chao-ji.md)

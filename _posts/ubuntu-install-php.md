@@ -212,7 +212,7 @@ Composer version 2.1.11 2021-11-02 12:10:25
 
 ## 与 Nginx 配合
 
-首先是需要安装 Nginx。这里可以参考我的[Ubuntu 安装 Nginx](/posts/ubuntu-install-nginx.md)。
+首先是需要安装 Nginx。这里可以参考我的[Ubuntu 安装 Nginx](/_posts/ubuntu-install-nginx.md)。
 
 首先我们先写入一个可以输出 `phpinfo()` 的文件。
 

@@ -16,34 +16,34 @@
 
 ## 【译】PHP Annotated
 
-- [2022 年 1 月](./posts/php-annotated-january-2022.md)
+- [2022 年 1 月](./_posts/php-annotated-january-2022.md)
 
 ## 原创
 
 ### 操作系统
 
-- [Ubuntu 安装后 2022-03-13](/posts/ubuntu-post-installation.md)
-- [ubuntu 安装 Nginx 2021-11-06](/posts/ubuntu-install-nginx.md)
-- [Ubuntu 安装 Docker 2021-10-30](/posts/ubuntu-install-docker.md)
-- [ubuntu 支持 OneDrive 2021-10-20](/posts/ubuntu-install-onedrive.md)
+- [Ubuntu 安装后 2022-03-13](/_posts/ubuntu-post-installation.md)
+- [ubuntu 安装 Nginx 2021-11-06](/_posts/ubuntu-install-nginx.md)
+- [Ubuntu 安装 Docker 2021-10-30](/_posts/ubuntu-install-docker.md)
+- [ubuntu 支持 OneDrive 2021-10-20](/_posts/ubuntu-install-onedrive.md)
 
 ### 编程语言
 
-- [Ubuntu 安装 PHP 2021-03-28](/posts/ubuntu-install-php.md)
+- [Ubuntu 安装 PHP 2021-03-28](/_posts/ubuntu-install-php.md)
 
 ### 数据库
 
-- [MySQL 重置密码 2022-02-15](/posts/mysql-reset-password.md)
+- [MySQL 重置密码 2022-02-15](/_posts/mysql-reset-password.md)
 
 ### ELK
 
-- [Ubuntu 安装 ElasticSearch 2021-09-16](/posts/ubuntu-install-elasticsearch.md)
-- [Ubuntu 安装 Kibana 2021-09-17](/posts/ubuntu-install-kibana.md)
+- [Ubuntu 安装 ElasticSearch 2021-09-16](/_posts/ubuntu-install-elasticsearch.md)
+- [Ubuntu 安装 Kibana 2021-09-17](/_posts/ubuntu-install-kibana.md)
 
 ### 杂项
 
-- [Sentry 磁盘清理 2022-01-20](/posts/sentry-cleanup-data.md)
-- [Git 基础用法 2021-10-21](/posts/git-basic-usage.md)
+- [Sentry 磁盘清理 2022-01-20](/_posts/sentry-cleanup-data.md)
+- [Git 基础用法 2021-10-21](/_posts/git-basic-usage.md)
 
 ## Cook
 

@@ -48,3 +48,23 @@
 ## Cook
 
 - [辣椒炒鸡](./cook/shan-dong-chao-ji.md)
+
+> 以下是后期要做的。先记录下相关命令。
+
+## Require
+
+- [Jekyll](https://jekyllrb.com/)
+- [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes)
+
+## 本地运行
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+## 推送 `_site` 到 `gh-pages`
+
+```bash
+git subtree push --prefix=_site origin gh-pages
+```

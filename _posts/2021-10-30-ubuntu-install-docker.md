@@ -1,4 +1,7 @@
-# Ubuntu 下安装 Docker
+---
+layout: post
+title:  "Ubuntu 下安装 Docker"
+---
 
 ![](../images/20211030.jpg)
 
@@ -77,12 +80,12 @@ sudo systemctl disable containerd.service
 
 ## Docker Compose 安装
 
-之前的 v1 版本是使用 Python 实现的。然后 v2 是使用 Golang进行的重写。所以在命令上可能会有些不同。
+之前的 v1 版本是使用 Python 实现的。然后 v2 是使用 Golang 进行的重写。所以在命令上可能会有些不同。
 
-安装命令如下：
+访问 https://github.com/docker/compose/releases 获取最新版本，我目前的安装版本是 2.3.4。执行如下：
 
 ```bash
-sudo curl -L "https://github.com/docker/compose/releases/download/v2.0.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.3.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
 
 对二进制文件赋予执行权限
@@ -95,7 +98,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 ```bash
 $ docker-compose --version
-Docker Compose version v2.0.1
+Docker Compose version v2.3.4
 ```
 
 ## Docker Compose 卸载
@@ -119,7 +122,7 @@ sudo rm /usr/local/bin/docker-compose
 最后重启服务：
 
 ```bash
-sudo systemctl restart docker.service
+sudo systemctl restart docker
 ```
 
 ## 总结

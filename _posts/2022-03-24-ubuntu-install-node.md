@@ -1,6 +1,18 @@
-# Ubuntu 安装 NodeJS
+---
+layout: posts
+title:  "Ubuntu 安装 NodeJS"
+last_modified_at: 2022-03-14T22:38:00
+categories:
+  - nodejs
+tags:
+  - ubuntu
+  - nodejs
+excerpt: ""
+header:
+  overlay_image: /assets/images/20220314.jpg
+---
 
-Ubuntu 目前支持 16.06 ~ 21.10 版本的。
+Ubuntu 目前支持 16.04 ~ 21.10 版本的。
 
 ## 安装 node 和 npm
 
@@ -10,7 +22,7 @@ Ubuntu 目前支持 16.06 ~ 21.10 版本的。
 
 ```bash
 curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
-sudo apt-get install -y nodejs
+sudo apt install -y nodejs
 ```
 
 这样就安装完成了。并且顺带着安装了 yarn。
@@ -52,6 +64,14 @@ $ yarn -v
 
 ```bash
 npm config set registry https://registry.npm.taobao.org
+```
+
+## yarn
+
+```bash
+curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null
+echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt update && sudo apt install yarn
 ```
 
 ## npm 基本用法

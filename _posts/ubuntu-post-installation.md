@@ -1,6 +1,6 @@
 # Ubuntu 安装后
 
-![](../images/20220313.jpg)
+![](/assets/images/20220313.jpg)
 
 ## 执行 `sudo` 命令忽略密码
 

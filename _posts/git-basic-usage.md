@@ -1,6 +1,6 @@
 # Git 基础用法
 
-![](../images/20211021.jpg)
+![](/assets/images/20211021.jpg)
 
 ## 安装
 

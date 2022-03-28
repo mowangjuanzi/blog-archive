@@ -1,6 +1,6 @@
 # Ubuntu 安装 Nginx
 
-![](../images/20211106.jpg)
+![](/assets/images/20211106.jpg)
 
 使用 apt 安装 nginx，方便快捷，省去了编译失败的可能。
 

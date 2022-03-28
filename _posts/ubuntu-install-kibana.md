@@ -1,6 +1,6 @@
 # Ubuntu 安装 Kibana
 
-![](../images/20210917.jpg)
+![](/assets/images/20210917.jpg)
 
 > 2022-03-16 已更新为 v8.1 版本。
 

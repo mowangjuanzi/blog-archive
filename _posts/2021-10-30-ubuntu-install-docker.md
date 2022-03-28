@@ -1,9 +1,16 @@
 ---
-layout: post
+layout: posts
 title:  "Ubuntu 下安装 Docker"
+last_modified_at: 2022-03-28T22:03:00
+categories:
+  - docker
+tags:
+  - ubuntu
+  - docker
+excerpt: ""
+header:
+  overlay_image: /assets/images/20211030.jpg
 ---
-
-![](../images/20211030.jpg)
 
 ## 老版本 docker 卸载
 

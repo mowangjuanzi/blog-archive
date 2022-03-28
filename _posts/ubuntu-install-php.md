@@ -1,6 +1,6 @@
 # Ubuntu 下安装 PHP
 
-![](../images/20210328.jpg)
+![](/assets/images/20210328.jpg)
 
 ## 安装所需依赖
 

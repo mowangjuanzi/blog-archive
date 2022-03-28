@@ -42,6 +42,7 @@
 
 ### 杂项
 
+- [Sentry 安装](/_posts/2018-10-29-ubuntu-install-sentry.md)
 - [Sentry 磁盘清理 2022-01-20](/_posts/sentry-cleanup-data.md)
 - [Git 基础用法 2021-10-21](/_posts/git-basic-usage.md)
 

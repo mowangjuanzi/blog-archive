@@ -1,6 +1,6 @@
 # ubuntu 支持 OneDrive
 
-![](../images/20211020.jpg)
+![](/assets/images/20211020.jpg)
 
 ## 简介
 

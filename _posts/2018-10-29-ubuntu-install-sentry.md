@@ -1,13 +1,16 @@
 ---
-layout: post
+layout: posts
 title:  "Ubuntu 安装 Sentry"
+date: 2018-10-29T15:34:30
+categories:
+  - sentry
+tags:
+  - ubuntu
+  - sentry
+excerpt: ""
+header:
+  overlay_image: /assets/images/20181029.jpg
 ---
-
-![](../images/20181029.jpg)
-
-```bash
-sudo SENTRY_IMAGE=getsentry/sentry:21.10.0 ./install.sh
-```
 
 之前写过一篇。但是现在 sentry 已经过去很久了。重新整理一下。
 

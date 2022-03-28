@@ -1,6 +1,6 @@
 # Ubuntu 安装 ElasticSearch
 
-![](../images/20210916.jpg)
+![](/assets/images/20210916.jpg)
 
 > 2022-03-15 已更新为 v8.1 版本。
 

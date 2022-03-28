@@ -1,6 +1,6 @@
 # 【译】PHP Annotated - 2022年1月
 
-![](../images/20220127.jpg)
+![](/assets/images/20220127.jpg)
 
 > 原文链接：https://blog.jetbrains.com/phpstorm/2022/01/php-annotated-january-2022/
 
@@ -28,7 +28,7 @@
 
     以下是根据 packagist.org 新提供的 PHP 版本统计，PHP 8.1 在两个月前发布，但已经获得了 9.1% 的份额，但是，还有很多是 PHP 7.4。
 
-    ![](../images/2022_01_php_versions.png)
+    ![](/assets/images/2022_01_php_versions.png)
 
 - [[RFC] 用户定义操作符重载](https://wiki.php.net/rfc/user_defined_operator_overloads#vote)
 
@@ -123,7 +123,7 @@
     > 为了更好的理解 #PHP 代码片段在内部如何工作，可以使用 `phpdbg -p* file.php` 转储操作码。
     > 
     > 揭穿为啥单引号比双引号更快的原因。
-    > ![](../images/FIQONPpXIAMc8yd.jpeg)
+    > ![](/assets/images/FIQONPpXIAMc8yd.jpeg)
     > 原始链接：https://twitter.com/AllaertPatrick/status/1478323931924860928
 
 ## 社区

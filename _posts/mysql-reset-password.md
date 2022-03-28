@@ -1,6 +1,6 @@
 # MySQL  重置密码
 
-![](../images/20220215.jpg)
+![](/assets/images/20220215.jpg)
 
 > 参考文档：[B.3.3.2 How to Reset the Root Password](https://dev.mysql.com/doc/refman/8.0/en/resetting-permissions.html)
 

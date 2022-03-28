@@ -1,4 +1,17 @@
-# 山东炒鸡
+---
+layout: posts
+title:  "山东炒鸡"
+last_modified_at: 2022-03-19T19:47:00
+categories:
+  - docker
+tags:
+  - ubuntu
+  - docker
+excerpt: ""
+header:
+  overlay_image: /assets/images/20220319.jpg
+collection: cook
+---
 
 ## 原料
 

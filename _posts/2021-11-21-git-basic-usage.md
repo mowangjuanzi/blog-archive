@@ -1,3 +1,15 @@
+---
+layout: posts
+title:  "Git 基础用法"
+date: 2021-11-21T00:00:30
+categories:
+  - git
+tags:
+  - git
+excerpt: ""
+header:
+  overlay_image: /assets/images/20211021.jpg
+---
 # Git 基础用法
 
 ![](/assets/images/20211021.jpg)
@@ -125,6 +137,12 @@ git --version
 
 ```bash
 git remote prune origin
+```
+
+- 创建空分支
+
+```bash
+git switch --orphan <new-branch>
 ```
 
 ## 设置全局 `.gitignore`

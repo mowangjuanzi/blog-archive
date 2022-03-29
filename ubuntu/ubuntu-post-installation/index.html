@@ -1,0 +1,759 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="zh" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Ubuntu 安装后 - 酷PHP</title>
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+
+
+  <meta name="author" content="魔王卷子">
+  
+  <meta property="article:author" content="魔王卷子">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:site_name" content="酷PHP">
+<meta property="og:title" content="Ubuntu 安装后">
+<meta property="og:url" content="/blog-archive/ubuntu/ubuntu-post-installation/">
+
+
+  <meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+
+
+
+  <meta property="og:image" content="/blog-archive/assets/images/20220313.jpg">
+
+
+
+
+
+  <meta property="article:published_time" content="2022-03-13T00:00:00+08:00">
+
+
+
+  <meta property="article:modified_time" content="2022-03-13T08:00:00+08:00">
+
+
+
+
+<link rel="canonical" href="/blog-archive/ubuntu/ubuntu-post-installation/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "/blog-archive/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/blog-archive/feed.xml" type="application/atom+xml" rel="alternate" title="酷PHP Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/blog-archive/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--posts">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/blog-archive/">
+          酷PHP
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/blog-archive/collections/">Collections</a>
+            </li><li class="masthead__menu-item">
+              <a href="/blog-archive/posts/">Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/blog-archive/categories/">Categories</a>
+            </li><li class="masthead__menu-item">
+              <a href="/blog-archive/tags/">Tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/blog-archive/about/">About</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: url('/blog-archive/assets/images/20220313.jpg');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Ubuntu 安装后
+
+        
+      </h1>
+      
+        <p class="page__lead">
+</p>
+      
+      
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+      
+      
+    </div>
+  
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="/blog-archive/">
+        <img src="/blog-archive/assets/images/avatar.jpg" alt="魔王卷子" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="/blog-archive/" itemprop="url">魔王卷子</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>I’m a PHPer.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="https://twitter.com/mowangjuanzi" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/mowangjuanzi" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+  
+  </div>
+
+
+
+  <div class="archive">
+    
+    <h2 id="执行-sudo-命令忽略密码">执行 <code class="language-plaintext highlighter-rouge">sudo</code> 命令忽略密码</h2>
+
+<p>// TODO</p>
+
+<h2 id="安装-vscode">安装 VSCode</h2>
+
+<blockquote>
+  <p>参考：https://code.visualstudio.com/docs/setup/linux</p>
+</blockquote>
+
+<p>安装源：</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /tmp
+wget <span class="nt">-qO-</span> https://packages.microsoft.com/keys/microsoft.asc | gpg <span class="nt">--dearmor</span> <span class="o">&gt;</span> packages.microsoft.gpg
+<span class="nb">sudo install</span> <span class="nt">-o</span> root <span class="nt">-g</span> root <span class="nt">-m</span> 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
+<span class="nb">sudo </span>sh <span class="nt">-c</span> <span class="s1">'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" &gt; /etc/apt/sources.list.d/vscode.list'</span>
+</code></pre></div></div>
+
+<p>安装程序：</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt <span class="nb">install </span>code
+</code></pre></div></div>
+
+<h2 id="安装-microsoft-edge-浏览器">安装 Microsoft Edge 浏览器</h2>
+
+<blockquote>
+  <p>参考：https://www.microsoftedgeinsider.com/zh-cn/download/</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /tmp
+wget <span class="nt">-qO-</span> https://packages.microsoft.com/keys/microsoft.asc | gpg <span class="nt">--dearmor</span> <span class="o">&gt;</span> microsoft.gpg
+<span class="nb">sudo install</span> <span class="nt">-o</span> root <span class="nt">-g</span> root <span class="nt">-m</span> 644 microsoft.gpg /usr/share/keyrings/
+<span class="nb">sudo </span>sh <span class="nt">-c</span> <span class="s1">'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.microsoft.com/repos/edge stable main" &gt; /etc/apt/sources.list.d/microsoft-edge-beta.list'</span>
+<span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt <span class="nb">install </span>microsoft-edge-stable
+</code></pre></div></div>
+
+<h2 id="安装-git">安装 Git</h2>
+
+<p>参考 <a href="./git-basic-usage.md">Git 基础用法</a></p>
+
+<h2 id="安装-simplenote">安装 SimpleNote</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>snap find simplenote
+</code></pre></div></div>
+
+<h2 id="邮件客户端">邮件客户端</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>thunderbird thunderbird-locale-zh-hans
+</code></pre></div></div>
+
+<h2 id="qq-音乐">QQ 音乐</h2>
+
+<p>下载地址: https://y.qq.com/download/download.html</p>
+
+<p>双击安装。</p>
+
+<h2 id="网盘下载--百度网盘">网盘/下载 —— 百度网盘</h2>
+
+<p>下载：https://pan.baidu.com/download</p>
+
+<p>双击安装。</p>
+
+<h2 id="小技巧">小技巧</h2>
+
+<ul>
+  <li>终端临时设置语言：</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>locale <span class="nt">-a</span> <span class="c"># 获取已经安装的语言</span>
+<span class="nv">LANG</span><span class="o">=</span>en_US <span class="c"># 临时设置语言</span>
+</code></pre></div></div>
+
+<ul>
+  <li>修复 apt 安装错误</li>
+</ul>
+
+<p>如果出现以下问题：</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nt">--fix-broken</span> <span class="nb">install
+</span>正在读取软件包列表... 完成
+正在分析软件包的依赖关系树... 完成
+正在读取状态信息... 完成                 
+正在修复依赖关系... 完成
+下列软件包是自动安装的并且现在不需要了：
+  libpcre2-posix2
+使用<span class="s1">'sudo apt autoremove'</span>来卸载它<span class="o">(</span>它们<span class="o">)</span>。
+将会同时安装下列软件：
+  libpcre2-posix3
+下列【新】软件包将被安装：
+  libpcre2-posix3
+升级了 0 个软件包，新安装了 1 个软件包，要卸载 0 个软件包，有 4 个软件包未被升级。
+有 4 个软件包没有被完全安装或卸载。
+需要下载 0 B/8,354 B 的归档。
+解压缩后会消耗 34.8 kB 的额外空间。
+您希望继续执行吗？ <span class="o">[</span>Y/n] y
+<span class="o">(</span>正在读取数据库 ... 系统当前共安装有 274263 个文件和目录。<span class="o">)</span>
+准备解压 .../libpcre2-posix3_10.39-3+ubuntu21.10.1+deb.sury.org+1_amd64.deb  ...
+正在解压 libpcre2-posix3:amd64 <span class="o">(</span>10.39-3+ubuntu21.10.1+deb.sury.org+1<span class="o">)</span> ...
+dpkg: 处理归档 /var/cache/apt/archives/libpcre2-posix3_10.39-3+ubuntu21.10.1+deb.sury.org+1_amd64.deb <span class="o">(</span><span class="nt">--unpack</span><span class="o">)</span>时出错：
+ 正试图覆盖 /usr/lib/x86_64-linux-gnu/libpcre2-posix.so.3.0.1，它同时被包含于软件包 libpcre2-posix2:amd64 10.39-2+ubuntu21.10.1+deb.sury.org+1
+在处理时有错误发生：
+ /var/cache/apt/archives/libpcre2-posix3_10.39-3+ubuntu21.10.1+deb.sury.org+1_amd64.deb
+E: Sub-process /usr/bin/dpkg returned an error code <span class="o">(</span>1<span class="o">)</span>
+</code></pre></div></div>
+
+<p>可以通过以下命令修复：</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>dpkg <span class="nt">--purge</span> libpcre2-dev
+dpkg: 依赖问题阻止了卸载 libpcre2-dev:amd64 的操作：
+ php8.1-dev 依赖于 libpcre2-dev <span class="o">(&gt;=</span> 10.30<span class="o">)</span><span class="nb">.</span>
+
+dpkg: 处理软件包 libpcre2-dev:amd64 <span class="o">(</span><span class="nt">--purge</span><span class="o">)</span>时出错：
+ 依赖问题 - 不会执行卸载
+在处理时有错误发生：
+ libpcre2-dev:amd64
+<span class="nv">$ </span><span class="nb">sudo </span>dpkg <span class="nt">--purge</span> php8.1-dev
+<span class="o">(</span>正在读取数据库 ... 系统当前共安装有 274263 个文件和目录。<span class="o">)</span>
+正在卸载 php8.1-dev <span class="o">(</span>8.1.3-1+ubuntu21.10.1+deb.sury.org+1<span class="o">)</span> ...
+正在处理用于 man-db <span class="o">(</span>2.9.4-2<span class="o">)</span> 的触发器 ...
+<span class="nv">$ </span><span class="nb">sudo </span>dpkg <span class="nt">--purge</span> libpcre2-dev
+<span class="o">(</span>正在读取数据库 ... 系统当前共安装有 273904 个文件和目录。<span class="o">)</span>
+正在卸载 libpcre2-dev:amd64 <span class="o">(</span>10.39-3+ubuntu21.10.1+deb.sury.org+1<span class="o">)</span> ...
+正在处理用于 man-db <span class="o">(</span>2.9.4-2<span class="o">)</span> 的触发器 ...
+</code></pre></div></div>
+
+
+<ul class="taxonomy__index">
+  
+  
+    <li>
+      <a href="#2022">
+        <strong>2022</strong> <span class="taxonomy__count">2</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2021">
+        <strong>2021</strong> <span class="taxonomy__count">2</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2018">
+        <strong>2018</strong> <span class="taxonomy__count">1</span>
+      </a>
+    </li>
+  
+</ul>
+
+
+
+
+  <section id="2022" class="taxonomy__section">
+    <h2 class="archive__subtitle">2022</h2>
+    <div class="entries-list">
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog-archive/nodejs/ubuntu-install-node/" rel="permalink">Ubuntu 安装 NodeJS
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog-archive/ubuntu/ubuntu-post-installation/" rel="permalink">Ubuntu 安装后
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
+
+  <section id="2021" class="taxonomy__section">
+    <h2 class="archive__subtitle">2021</h2>
+    <div class="entries-list">
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog-archive/git/git-basic-usage/" rel="permalink">Git 基础用法
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog-archive/docker/ubuntu-install-docker/" rel="permalink">Ubuntu 下安装 Docker
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
+
+  <section id="2018" class="taxonomy__section">
+    <h2 class="archive__subtitle">2018</h2>
+    <div class="entries-list">
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog-archive/sentry/ubuntu-install-sentry/" rel="permalink">Ubuntu 安装 Sentry
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
+
+
+  </div>
+</div>
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+    
+
+    
+      <li><a href="/blog-archive/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 酷PHP. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/blog-archive/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/blog-archive/assets/js/lunr/lunr.min.js"></script>
+<script src="/blog-archive/assets/js/lunr/lunr-store.js"></script>
+<script src="/blog-archive/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>

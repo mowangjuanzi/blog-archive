@@ -1,5 +1,3 @@
-# Ubuntu 安装后
-
 ---
 layout: posts
 title:  "Ubuntu 安装后"

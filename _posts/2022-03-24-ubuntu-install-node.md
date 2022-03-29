@@ -14,7 +14,7 @@ header:
 
 Ubuntu 目前支持 16.04 ~ 21.10 版本的。
 
-## 安装 node 和 npm
+## 安装 Node
 
 以下命令安装的是长期支持版，也就是大部分人推荐安装的版本：
 
@@ -25,56 +25,45 @@ curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo apt install -y nodejs
 ```
 
-这样就安装完成了。并且顺带着安装了 yarn。
+这样就安装完成了。并且顺带着安装了 npm。
 
 下面查看下安装的版本。
 
 ```bash
 $ node -v
-v14.18.1
+v16.14.2
 $ npm -v
-6.14.15
+8.5.0
 ```
 
 ## 安装 yarn
 
-如果你想用 `yarn`。也可以使用如下命令安装:
+corepack 在 node >= 16.10 是默认安装的，但是并未开启，需要执行以下命令启动：
 
 ```bash
-$ sudo npm install -g yarn
+sudo corepack enable
+```
 
-> yarn@1.22.17 preinstall /usr/lib/node_modules/yarn
-> :; (node ./preinstall.js > /dev/null 2>&1 || true)
+现在查看下 yarn 的版本:
 
-/usr/bin/yarn -> /usr/lib/node_modules/yarn/bin/yarn.js
-/usr/bin/yarnpkg -> /usr/lib/node_modules/yarn/bin/yarn.js
-+ yarn@1.22.17
-added 1 package in 13.702s
+```bash
 $ yarn -v
-1.22.17
+1.22.15
 ```
 
 这样就齐活了。
 
 ## 设置镜像
 
-其实淘宝是提供了镜像，可以对其进行加速。
-
-执行以下命令就可以直接加速了：
+这里需要注意的是，[淘宝镜像即将停止解析](https://zhuanlan.zhihu.com/p/465424728) ，需要使用 npmmirror 进行替换。
 
 ```bash
-npm config set registry https://registry.npm.taobao.org
-```
-
-## yarn
-
-```bash
-curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null
-echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt update && sudo apt install yarn
+npm config set registry https://registry.npmmirror.com
 ```
 
 ## npm 基本用法
+
+// TODO
 
 ## 尾巴
 
